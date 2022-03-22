@@ -7,7 +7,7 @@ jobs = [
         {"min_salary": 3000, "max_salary": 4000, "date_posted": "2021-01-01"},
     ]
 
-    
+
 def test_sort_by_criteria():
     sort_by(jobs, "min_salary")
     assert jobs == [
@@ -31,4 +31,4 @@ def test_sort_by_criteria():
     ]
 
     with pytest.raises(ValueError):
-        sort_by(jobs, "invalid")  
+        sort_by(jobs, "invalid")
